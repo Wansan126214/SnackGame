@@ -316,7 +316,7 @@ export class GameManager extends Component {
         const newLevel = Math.floor(this.score / 5) + 1;
         if (newLevel > this.level) {
             this.level = newLevel;
-            this.moveInterval = Math.max(0.04, 0.12 - (this.level - 1) * 0.01);
+            //this.moveInterval = Math.max(0.04, 0.12 - (this.level - 1) * 0.01);
             this.spawnObstacle();
         }
     }
